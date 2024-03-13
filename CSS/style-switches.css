@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* Estilo de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 4px;
+    /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo del track (la barra en sí misma) */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    /* Color del fondo del track */
+}
+
+/* Estilo del thumb (el deslizador) */
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    /* Color del deslizador */
+}
+
+/* Estilo del thumb al pasar el mouse sobre él */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color del deslizador al pasar el mouse sobre él */
+}
+
+
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    overflow: none;
+    background-color: azure;
+    color: #0c273a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* navbar */
+
+.navbar {
+    font-size: 18px;
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 100%;
+
+}
+
+.main-nav {
+    list-style-type: none;
+    display: flex;
+    font-size: 14px;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px 20px;
+}
+
+/* cabecera */
+
+header {
+    background-image: linear-gradient(#2376ae, transparent);
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    text-align: center;
+    color: #0c273a;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+
+main {
+    padding: 2%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#defHojaTec {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+}
+
+#defHojaTec a {
+    align-self: center;
+    padding: 3%;
+    cursor: pointer;
+}
+
+#contenedorFotoSwitch {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    font-size: 14px;
+    align-items: center;
+    background-image: linear-gradient(260deg, #2376aea5 0%, #c06ecf93 100%);
+    border-radius: 10px;
+}
+
+#contenedorFotoSwitch p {
+    padding: 2%;
+    width: 60%;
+}
+
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-image: linear-gradient(260deg, #2376ae7e 0%, #c06ecf74 100%);
+}
+
+#popup img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#popup button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#contenedorFotoSwitch {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    text-align: justify;
+    font-size: 14px;
+}
+
+#contenedorFotoSwitch img {
+    height: 100px;
+}
+
+
+#contenedorFotoSwitch img:hover {
+    height: 100px;
+    cursor: pointer;
+}
+
+h2 {
+    align-self: center;
+    padding: 3%;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 2px solid #2376ae;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    position: sticky;
+    top: 0;
+}
+
+table li{
+    cursor: pointer;
+}
+
+/* Estilos del pop-up */
+#popUpExplicacion {
+    display: none;
+    width: 50%;
+    position: fixed;
+    background-image: linear-gradient(260deg, #3e8ec3 0%, #d388e0 100%);
+    border: 1px solid #c16ecf;
+    padding: 20px;
+    z-index: 9999;
+    border-radius: 10px;
+    padding: 5%;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-around;
+}
+
+#nombre {
+    color: #0c273a;
+    font-size: 16px;
+    text-align: center;
+}
+
+#explicacion {
+    color: white;
+    font-size: 14px;
+    padding: 2%;
+}
+
+#cerrarPopUp {
+    border: solid 2px;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    padding: 1%;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+#scrollTop {
+    position: fixed;
+    bottom: 5%;
+    right: 0;
+}
+
+.crearEspacio {
+    height: 50px;
+}
+
+footer {
+    margin-top: 10%;
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+#easter-egg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    border-radius: 10px;
+    display: none;
+    cursor: crosshair;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        font-size: 18px;
+        background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .main-nav {
+        list-style-type: none;
+        display: flex;
+        margin-right: 5%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .nav-links {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .main-nav li {
+        text-align: center;
+        margin: 15px 20px;
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+}

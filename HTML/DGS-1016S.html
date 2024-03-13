@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en, es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nuria Nogales">
+    <meta name="description" content="Hoja Técnica Especificaciones Switch DGS-1016S">
+    <link rel="icon" type="image/x-icon" href="../IMG/FAVICON/cora-mediano.png">
+    <link rel="stylesheet" href="../CSS/style-switches.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Hoja Técnica DGS-1016S</title>
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="../index.html" class="nav-links">Home</a>
+            </li><br>
+            <li>
+                <a href="DES-1016D.html" class="nav-links">DES-1016D</a>
+            </li><br>
+            <li>
+                <a href="DGS-1016S.html" class="nav-links">DGS-1016S</a>
+            </li><br>
+            <li>
+                <a href="DGS-105GL.html" class="nav-links">DGS-105GL</a>
+            </li><br>
+            <li>
+                <a href="DGS-1005D.html" class="nav-links">DGS-1005D</a>
+            </li><br>
+        </ul>
+    </nav>
+    <header>
+        <h1>DGS-1016S</h1>
+        <h2>Switch Ethernet no administrado de la marca D-Link.</h2>
+    </header>
+
+
+    <main>
+        <div id="defHojaTec">
+            <h2>El DES-1016S es un switch Ethernet no administrado de la marca D-Link.</h2>
+            <a target="_blank"
+                href="https://www.dlink.com/es/es/-/media/business_products/dgs/dgs-1016s/datasheet/dgs_1016s_datasheet_es.pdf">Hoja
+                Técnica
+            </a>
+
+            <div id="popup" style="display: none;">
+                <button onclick="cerrarFoto()">X</button>
+                <img id="imagenAmpliada2">
+            </div>
+            <div id="contenedorFotoSwitch">
+
+                <p>
+                    El DGS-1016S es un switch de red con capacidad para hasta 16 puertos Ethernet, lo que permite la
+                    conexión simultánea de múltiples dispositivos. Este tipo de switches son fundamentales en entornos
+                    empresariales, oficinas domésticas o redes de pequeñas y medianas empresas, ofreciendo una solución
+                    eficiente para gestionar la conectividad de dispositivos como computadoras, impresoras, servidores,
+                    y otros dispositivos de red. Su versatilidad y facilidad de uso lo convierten en una opción popular
+                    para mejorar la eficiencia y el rendimiento de la red.
+
+                </p>
+                <img onclick="mostrarFoto('DGS-1016S')" src="../IMG/DGS-1016S.png" id="fotoSwitch" alt="DGS-1016S">
+
+
+            </div>
+
+        </div>
+
+        <h2>Technical Specifications</h2>
+
+        <table id="miTabla">
+            <tr class="section">
+                <th colspan="2">General</th>
+            </tr>
+            <tr>
+                <td>Interfaces de dispositivo</td>
+                <td>
+                    <ul>
+                        <li>16 puertos LAN 10/100/1000 Mbps</li><br>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Estándares</td>
+                <td>
+                    <ul>
+                        <li>IEEE 802.3 10BASE-T Ethernet (twisted pair copper)</li><br>
+                        <li>IEEE 802.3u 100BASE-TX Fast Ethernet (twisted-pair copper)</li><br>
+                        <li>IEEE 802.3ab 1000BASE-T</li><br>
+                        <li>Control de flujo IEEE 802.3x</li><br>
+                        <li>IEEE 802.1p QoS</li><br>
+                        <li>IEEE 802.3az Energy Efficient Ethernet (EEE)</li><br>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="section">
+                <th colspan="2">Funcionalidad</th>
+            </tr>
+            <tr>
+                <td>Capacidad de conmutación</td>
+                <td>
+                    <ul>
+                        <li>32 Gbps</li>
+                    </ul>
+                    </td>
+            </tr>
+            <tr>
+                <td>Características avanzadas</td>
+                <td>
+                    <ul>
+                        <li>Crossover MDI/MDIX automático para todos los puertos</li><br>
+                        <li>Esquema de almacenamiento y reenvío seguro</li><br>
+                        <li>Full/Half-duplex para velocidades Ethernet/Fast Ethernet</li><br>
+                        <li>Compatible 9,216 byte jumbo frames</li><br>
+                        <li>Back pressure at half-duplex operation</li><br>
+                        <li>Recepción y transmisión a velocidad de cable</li><br>
+                        <li>Auto-negociación para cada puerto</li><br>
+                        <li>Calidad de servicio QoS (8 colas, modo estricto)</li><br>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Tasas de transferencia de datos</td>
+                <td>
+                    <ul>
+                        <li>Ethernet:
+                            <ul>
+                                <li>10 Mbps (semidúplex)</li><br>
+                                <li>20 Mbps (dúplex completo)</li><br>
+                            </ul>
+                        </li><br>
+                        <li>Fast Ethernet:
+                            <ul>
+                                <li>100 Mbps (semidúplex)</li><br>
+                                <li>200 Mbps (full-duplex)</li><br>
+                            </ul>
+                        </li><br>
+                        <li>Gigabit Ethernet:
+                            <ul>
+                                <li>2000 Mbps (full-duplex)</li><br>
+                            </ul>
+                        </li><br>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Método de transmisión</td>
+                <td>
+                    <ul>
+                        <li>Guardar y enviar</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Tamaño de la tabla de direcciones MAC</td>
+                <td>
+                    <ul>
+                        <li>8K entradas</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Filtrado de paquetes/Tasas de reenvío</td>
+                <td>
+                    <ul>
+                        <li>Ethernet:</li><br>
+                        <li>14,880 pps por puerto</li><br>
+                        <li>Fast Ethernet:</li><br>
+                        <li>148,800 pps por puerto</li><br>
+                        <li>Gigabit Ethernet:</li><br>
+                        <li>1,488,000 pps por puerto</li><br>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>RAM Buffer</td>
+                <td>
+                    <ul>
+                        <li>512 KB por dispositivo</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="section">
+                <th colspan="2">Características físicas</th>
+            </tr>
+            <tr>
+                <td>Indicadores LED</td>
+                <td>
+                    <ul>
+                        <li>Por puerto: Enlace/Actividad/Velocidad</li><br>
+                        <li>Por dispositivo Alimentación</li><br>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Intercambio de la interfaz multimedia</td>
+                <td>
+                    <ul>
+                        <li>Ajuste automático MDI/MDIX para todos los puertos</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Dimensiones</td>
+                <td>
+                    <ul>
+                        <li>280 x 110 x 25 mm</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Peso</td>
+                <td>
+                    <ul>
+                        <li>0.77 kg</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Entrada de alimentación</td>
+                <td>
+                    <ul>
+                        <li>12 V, 1 A</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Consumo de energía</td>
+                <td>
+                    <ul>
+                        <li>En espera: 3.37 W</li><br>
+                        <li>Máximo: 8.89 W</li><br>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Temperatura</td>
+                <td>
+                    <ul>
+                        <li>Funcionamiento: 0 a 40 °C</li><br>
+                        <li>Almacenamiento: -40 a 70 °C</li><br>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Humedad</td>
+                <td>
+                    <ul>
+                        <li>Funcionamiento: 10 % a 90 % sin condensación</li><br>
+                        <li>Almacenamiento: 5 % a 95 % sin condensación</li><br>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>MTBF</td>
+                <td>
+                    <ul>
+                        <li>564,658 horas</li><br>  
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Disipación máxima del calor</td>
+                <td>
+                    <ul>
+                        <li>30.32 BTU/h</li><br>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Emisión (EMI)</td>
+                <td>
+                    <ul>
+                        <li>CE clase A</li><br>
+                        <li>FCC clase A</li><br>
+                        <li>ICES 003</li><br>
+                        <li>RCM</li><br>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Seguridad</td>
+                <td>
+                    <ul>
+                        <li>LVD</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <div id="popUpExplicacion">
+            <div id="nombreExplicacion"></div>
+            <div id="contenidoExplicacion"></div>
+        </div>
+
+    </main>
+    <div class="crearEspacio"></div>
+    <footer>
+        Derechos de autor © 2024 | Practica PAX 2Ev
+    </footer>
+    <div id="scrollTop">
+        <a href="#"><img src="../IMG/scrollTop.png" alt="scrollTop"></a>
+    </div>
+    <!-- Easter egg content -->
+    <div id="easter-egg">
+        <h2>Congratulations!</h2>
+        <p>You found the hidden Easter egg!</p>
+        <p>This website was made by Nuri</p>
+    </div>
+    <script src="../JS/switch1.js"></script>
+</body>
+
+</html>
